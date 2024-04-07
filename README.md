@@ -50,6 +50,17 @@ This RoBERTa-based model is fine-tuned for sentiment analysis using the Tweet Ev
     * scipy
     * datasets
     * evaluate
+## How to Run
+* Install all the python libraries shown below-
+    *  pandas
+    *  numpy
+    *  torch 
+    *  transformers
+    * matplotlib
+    * customtkinter
+    * scipy
+* Now download PeasAI-TweetAnalyzer-main.zip from github and extract all the files.
+* Run app.py using terminal.
 ## Applications of our Ideas
 - ***Brand Reputation:*** The model can help airline companies monitor their brand reputation in real-time by tracking sentiment trends across social media. 
 
@@ -68,14 +79,7 @@ This RoBERTa-based model is fine-tuned for sentiment analysis using the Tweet Ev
 
 * ***Enhanced Code Structure and GUI Refinement:*** The well-organised, object-oriented code facilitates future development of new features. The GUI can be refined for a more user-friendly experience.
 
-## How to Run
-* Install all the python libraries shown below-
-    *  pandas
-    *  numpy
-    *  torch 
-    *  transformers
-    * matplotlib
-    * customtkinter
-    * scipy
-* Now download PeasAI-TweetAnalyzer-main.zip from github and extract all the files.
-* Run app.py using terminal.
+## Demo video
+
+
+Link- https://youtu.be/DCslvVYv0lc
