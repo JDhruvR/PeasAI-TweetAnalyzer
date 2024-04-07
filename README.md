@@ -3,6 +3,14 @@
 
 
 
+## Contents
+
+* ***3-FoldCrossVerificationResults:*** This folder contains 3 files that contain the result of the 3 cross validation splits that were used while fine-tuning the sentiment analysis model.
+* ***ModelStatistics.txt:*** This text file contains statistical information about the 3 splits and the average values.
+* ***PeasAI-TweetAnalyzer-ProjectReport.pdf:*** It is the project report file. It contains the link of the Kaggle Notebook that was used for fine-tuning along with some other useful information.
+* ***app.py:*** The main code. The file serves as the main codebase for the sentiment analysis application. It functions as the entry point for the application, orchestrating the processing of input data (tweets) and providing the output of classified sentiments.
+* ***finalTestSetResults.csv:*** This contains the results for the final test set used while fine-tuning.
+
 ## Track and Contributors ##
 
 ### Track
@@ -61,7 +69,7 @@ This RoBERTa-based model is fine-tuned for sentiment analysis using the Tweet Ev
     * scipy
 * Now download PeasAI-TweetAnalyzer-main.zip from github and extract all the files.
 * Run app.py using terminal.
-## Applications of our Ideas
+## Applications of our Idea
 - ***Brand Reputation:*** The model can help airline companies monitor their brand reputation in real-time by tracking sentiment trends across social media. 
 
 - ***Customer Feedback Analysis:*** Airlines can use the sentiment analysis model to systematically analyze customer feedback from social media platforms like Twitter.
