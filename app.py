@@ -215,7 +215,7 @@ modelName = "cardiffnlp/twitter-roberta-base-sentiment-latest" #The Huggingface 
 
 tokz = AutoTokenizer.from_pretrained(modelName)
 
-modelForSentiment = AutoModelForSequenceClassification.from_pretrained("D:\Downloads\FineTunedV2-20240402T132841Z-001\FineTunedV2") #Loading a finetuned version of the Huggingface model used.
+modelForSentiment = AutoModelForSequenceClassification.from_pretrained("jdhr/AirlineTweetAnalysis-RoBERTa") #Loading a finetuned version of the Huggingface model used.
 
 classifier = pipeline("zero-shot-classification",
                       model="MoritzLaurer/deberta-v3-xsmall-zeroshot-v1.1-all-33")
