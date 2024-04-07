@@ -141,7 +141,12 @@ class TweetFrame(customtkinter.CTkFrame):
         self.grid_columnconfigure(1, weight=0)
         self._border_width=2
 
-        self.classes=['Bad Flight', 'Customer Service Issue', 'Flight Booking Problems', 'Lost Luggage', 'Cancelled Flight', 'Late Flight', 'Damaged Luggage', 'Flight Attendant Complaints', 'Long Lines']
+        self.classes = ['Cancelled Flight', 'Customer Service', 'Bad Flight',
+                        'Late Flight', 'Customer Service Issue', 'No Issues',
+                        'Refund Issue', 'Flight Delays', 'Flight Attendant Complaints',
+                        'Lost Luggage', 'No issue', 'Bad Experience', 'App Issue',
+                        'Flight Booking Problems', 'Food Issues', 'Long Lines',
+                        'Damaged Luggage']
         self.tweetClass=tweetClass
         self.sentiments=['Positive', 'Neutral', 'Negative']
 
@@ -213,11 +218,14 @@ tokz = AutoTokenizer.from_pretrained(modelName)
 modelForSentiment = AutoModelForSequenceClassification.from_pretrained("D:\Downloads\FineTunedV2-20240402T132841Z-001\FineTunedV2") #Loading a finetuned version of the Huggingface model used.
 
 classifier = pipeline("zero-shot-classification",
-                      model="facebook/bart-large-mnli")
+                      model="MoritzLaurer/deberta-v3-xsmall-zeroshot-v1.1-all-33")
 
-candidateClassLabels = ['Bad Flight', 'Customer Service Issue', 'Flight Booking Problems',
-    'Lost Luggage', 'Cancelled Flight', 'Late Flight',
-    'Damaged Luggage', 'Flight Attendant Complaints', 'Long Lines']
+candidateClassLabels = ['Cancelled Flight', 'Customer Service', 'Bad Flight',
+       'Late Flight', 'Customer Service Issue', 'No Issues',
+       'Refund Issue', 'Flight Delays', 'Flight Attendant Complaints',
+       'Lost Luggage', 'No issue', 'Bad Experience', 'App Issue',
+       'Flight Booking Problems', 'Food Issues', 'Long Lines',
+       'Damaged Luggage']
 
 def sentimentAnalysis(tweet):
     output = modelForSentiment(**tokz(preprocess(tweet), return_tensors='pt')) #Predicts using the model
