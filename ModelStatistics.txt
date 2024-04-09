@@ -35,18 +35,6 @@ specificity ( true negative rate ) = 0.9465020576131687
 false negative rate                = 0.0842733908427340
 true neutrality rate               = 0.7188498402555911
 
-Final Test Results
-
-                p positives  p neutrals  p negatives
-a positives           94          10            18
-a neutrals            16         122            53
-a negatives           11          50           525
-
-sensitivity ( true positive rate ) = 0.7704918032786885
-specificity ( true negative rate ) = 0.8959044368600683
-false negative rate                = 0.1191275167785235
-true neutrality rate               = 0.6387434554973822
-
 The k-cross Validation set Statistics - weighted average
 
 sensitivity ( true positive rate ) = 726 / 848   = 0.8797169811320755
